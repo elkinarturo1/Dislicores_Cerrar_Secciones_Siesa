@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Limpiar_Sessiones_BD.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="strConexionOracle" Type="System.String" Scope="User">
+      <Value Profile="(Default)">DSN=SIESAPOB;Uid=UNOEE;Pwd=fedunoee2011;</Value>
+    </Setting>
+    <Setting Name="Query" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SELECT TERMINAL, STATUS, SID, SERIAL#, PROCESS FROM  v$session WHERE ((TERMINAL = 'EUCLIDES') OR (TERMINAL = 'HEROS') OR (TERMINAL = 'ODISEO')) AND (STATUS = 'INACTIVE') and (LAST_CALL_ET &gt; 900)</Value>
+    </Setting>
+    <Setting Name="strConexionControlSeccionesSiesa" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Server = 192.168.0.54;Database=ControlSeccionesSiesa;User Id = sa; Password = Sa123456; Integrated Security = False</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
